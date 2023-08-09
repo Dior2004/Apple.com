@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-width: 1519px;
+  background-color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav2 {
+  width: 100%;
+  height: 44px;
+  background-color: #020202cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  backdrop-filter: blur(15px);
+}
+.nav2 ul {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  color: #b3b3b4;
+  font-size: 12px;
+}
+
+.nav2 ul:nth-child(2) {
+  width: 90%;
+  height: 100%;
+  padding: 0 2%;
+  display: none;
+}
+
+.fa-apple {
+  font-size: 18px;
+}
+.nav2 li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.text {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  color: #1d1d1f;
+  font-size: 14px;
+  font-weight: 450;
+}
+.text sup {
+  font-size: 8.5px;
+}
+.text a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.text i {
+  font-size: 9px;
+  color: #0066cc;
+}
+.text a:hover {
+  text-decoration: underline;
+}
+.iPhone13_Pro {
+  width: 100%;
+  height: 692px;
+  display: flex;
+  justify-content: center;
+  background: url("/img/hero_iphone_13pro__dhnsegysa42u_large.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.iPhone13_Pro .text,
+.iPhone_13 .text,
+.card .text {
+  width: 480px;
+  height: 180px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.iPhone13_Pro h1,
+.iPhone_13 h1,
+.card h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.iPhone13_Pro span,
+.iPhone_13 span,
+.card span {
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+.iPhone13_Pro .links,
+.iPhone_13 .links,
+.card .links {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+}
+.links i {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 8px;
+}
+.links a {
+  text-decoration: none;
+  color: #0066cc;
+}
+.iPhone_13 {
+  width: 100%;
+  height: 624px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("/img/hero_iphone_13__f194u1rdooeq_large.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px auto;
+}
+
+.iPhone_13 h1 {
+  color: #fff;
+}
+.iPhone_13 span {
+  color: rgb(255, 200, 205);
+}
+.iPhone_13 .links a {
+  text-decoration: none;
+  color: #2997ff;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+.iPhone_13 .links i {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 8px;
+  color: #2997ff;
+}
+
+.card {
+  width: 100%;
+  height: 624px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("/img/hero_apple_card__bt4lpouoeyoi_large.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card .text {
+  height: 230px;
+}
+.card .links {
+  width: 280px;
+}
+.card span {
+  font-size: 29px;
+  font-weight: 450;
+}
+.card p {
+  font-size: 19px;
+  color: gray;
+}
+
+/*Grid starts here*/
+
+.collection {
+  width: 100%;
+  background-color: white;
+}
+.grid {
+  width: 99%;
+  height: 1900px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.grid .box {
+  width: 100%;
+  height: 624px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.box:nth-child(1) {
+  background: url("/img/tile_watch__e9n11b6m6yq2_large.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box:nth-child(1) img {
+  width: 140px;
+  margin: 5px auto;
+}
+.box:nth-child(1) span {
+  color: red;
+  margin-top: 50px;
+}
+.box:nth-child(1) p {
+  font-size: 29px;
+}
+.box .links {
+  margin-top: 8px;
+}
+.box .links a {
+  font-size: 18px;
+}
+.box .links i {
+  font-size: 12px;
+}
+
+.box:nth-child(2) {
+  background: url("/img/tile_soip__f0c6lef982em_large.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #1d1d1f;
+  text-align: center;
+}
+.box:nth-child(2) h1,
+.box:nth-child(4) h1 {
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.box:nth-child(2) span,
+.box:nth-child(4) span {
+  font-size: 22px;
+}
+.box:nth-child(2) a {
+  color: #1d1d1f;
+}
+.box:nth-child(2) i {
+  color: #1d1d1f;
+}
+
+.box:nth-child(3) {
+  background: url("/img/promo_vday22__oz9b5x4x7ney_large.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(92, 28, 92, 0.911);
+}
+.box:nth-child(3) span {
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.box:nth-child(3) h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.box:nth-child(4) {
+  background: url("/img/promo_watch__fo7j0tnywi2q_large.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.box:nth-child(4) h1 {
+  margin-top: 60px;
+}
+.box:nth-child(4) a {
+  color: #2997ff;
+}
+.box:nth-child(4) i {
+  color: #2997ff;
+}
+
+.box:nth-child(5) {
+  background: url("/img/tile_winter__bpktzwl6hsc2_large.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box:nth-child(6) {
+  background: url("/img/promo_afterparty__c7n09vg8bp8i_large.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box:nth-child(6) img {
+  margin-top: 50px;
+}
+.box:nth-child(6) .second {
+  margin-top: 410px;
+}
+.box:nth-child(6) a {
+  color: black;
+}
+.box:nth-child(6) i {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/*foot part starts here*/
+
+.text_wrap {
+  width: 65%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 17px;
+  letter-spacing: 0.1px;
+  font-size: 12px;
+  color: #6e6e73;
+}
+
+.text_wrap > span {
+  font-weight: 450;
+  word-spacing: 1.75px;
+}
+.text_wrap span > b {
+  font-weight: 650;
+  color: #6e6e73dd;
+}
+
+.text_wrap span > b > a {
+  color: #424245;
+  text-decoration: none;
+}
+.text_wrap span > a {
+  color: #424245;
+  text-decoration: none;
+}
+.text_wrap span > a:hover {
+  text-decoration: underline;
+}
+.text_wrap span > b > a:hover {
+  text-decoration: underline;
+}
+.text_wrap > span:nth-child(1) {
+  margin-top: 0px;
+}
+.text_wrap > span {
+  margin-top: 11px;
+}
+
+.line_up {
+  width: 100%;
+  height: 0.5px;
+  background-color: #b9b9be77;
+  margin: 20px auto;
+}
+
+/*ul starts here*/
+
+ul {
+  list-style: none;
+}
+
+.big_ul {
+  width: 100%;
+  height: 435px;
+  display: flex;
+}
+.big_li {
+  width: 20%;
+  height: 100%;
+}
+.small_ul {
+  width: 100%;
+  height: 100%;
+}
+.small_ul li {
+  width: 100%;
+  height: 26px;
+  display: flex;
+  align-items: center;
+}
+.small_ul > .gap {
+  width: 100%;
+  height: 17px;
+}
+.text_wrap a {
+  color: #424245;
+  text-decoration: none;
+}
+.text_wrap a:hover {
+  text-decoration: underline;
+}
+.text_wrap > p > a {
+  color: #0066cc;
+}
+.small_ul li > h3 {
+  font-size: 12px;
+}
+
+.text_wrap > p {
+  margin-top: 34px;
+}
+
+.line_down {
+  width: 100%;
+  height: 0.8px;
+  background-color: #6e6e7377;
+  margin: 7px auto;
+}
+
+/*foot starts here*/
+
+.foot {
+  width: 100%;
+  height: 26px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+
+.foot .left {
+  width: 730px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.legal_link > .vertical {
+  width: 0.8px;
+  height: 16px;
+  background-color: #6e6e7377;
+}
+
+.legal_link {
+  width: 420px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .nav2 ul:nth-child(1) {
+    display: none;
+  }
+  .nav2 ul:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
